@@ -1,0 +1,22 @@
+01.Laravel Installation:-
+	composer create-project --prefer-dist laravel/laravel blog
+02.Laravel UI Installation:-
+	composer require laravel/ui
+
+
+03.After Composer installation run artisan command to generate scaffolding.
+	// Generate basic scaffolding...
+		php artisan ui bootstrap
+		php artisan ui vue
+		php artisan ui react
+
+	// Generate login / registration scaffolding...
+		php artisan ui bootstrap --auth
+		php artisan ui vue --auth
+		php artisan ui react --auth
+
+
+04.After generating UI need to install npm dependencies:-
+		npm run install && npm run dev
+05.Next to Migrate the database:-
+		php artisan migrate
